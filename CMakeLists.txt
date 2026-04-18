@@ -18,7 +18,16 @@ configure_file(
     ${PROJECT_BINARY_DIR}/config.h
     )
 
-add_executable(rainbow-triangle src/main.cpp)
+set(SOURCES
+    src/file_utils.cpp
+    src/main.cpp
+    src/shader.cpp
+)
+
+add_executable(
+    rainbow-triangle
+    ${SOURCES}
+)
 target_include_directories(
     rainbow-triangle
     PRIVATE
@@ -30,3 +39,12 @@ target_link_libraries(rainbow-triangle
         glad
         glfw
     )
+
+add_custom_command(
+    TARGET rainbow-triangle
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${PROJECT_SOURCE_DIR}/assets
+            $<TARGET_FILE_DIR:rainbow-triangle>/assets
+    COMMENT "Copying assets to output directory"
+)
