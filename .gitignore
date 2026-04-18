@@ -11,6 +11,9 @@ compile_commands.json
 .vscode/
 .DS_Store
 
+# clangd cache
+.cache/
+
 # CLion / JetBrains
 .idea/
 cmake-build-*/
