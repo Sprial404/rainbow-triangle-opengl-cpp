@@ -1,0 +1,35 @@
+# Build output
+build/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Editor and OS noise
+.vscode/
+.DS_Store
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Visual Studio / MSVC
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.ipch
+
+# Common Windows build outputs
+*.obj
+*.pdb
+*.ilk
