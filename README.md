@@ -60,4 +60,4 @@ The project now renders a basic rainbow triangle and has the core app loop, inpu
 
 ## License
 
-MIT License. See LICENSE.
+MIT License. See [LICENSE](LICENSE).
