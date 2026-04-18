@@ -48,9 +48,15 @@ Typical run commands:
 .\build\Release\rainbow-triangle.exe
 ```
 
+## Screenshot
+
+Current output:
+
+![Rainbow triangle screenshot](screenshots/phase1/rainbow-triangle.png)
+
 ## Current status
 
-This is currently a scaffold project rather than a finished demo. If you are expecting a rendered rainbow triangle today, that rendering pass has not been added yet.
+The project now renders a basic rainbow triangle and has the core app loop, input callbacks, and shader/program plumbing in place. It is still intentionally small, but ready to build on.
 
 ## License
 
